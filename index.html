@@ -1,91 +1,1295 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="css/gradientColor.css">
-</head>
-<body>
-<ul id="gradient">
-    <li class="gradient--0">
-        <div class="gradient"></div>
-        <div class="start-color"></div>
-        <div class="end-color"></div>
-    </li>
-    <li class="gradient--1">
-        <div class="gradient"></div>
-        <div class="start-color"></div>
-        <div class="end-color"></div>
-    </li>
-    <li class="gradient--2">
-        <div class="gradient"></div>
-        <div class="start-color"></div>
-        <div class="end-color"></div>
-    </li>
-    <li class="gradient--3">
-        <div class="gradient"></div>
-        <div class="start-color"></div>
-        <div class="end-color"></div>
-    </li>
-    <li class="gradient--4">
-        <div class="gradient"></div>
-        <div class="start-color"></div>
-        <div class="end-color"></div>
-    </li>
-    <li class="gradient--5">
-        <div class="gradient"></div>
-        <div class="start-color"></div>
-        <div class="end-color"></div>
-    </li>
-    <li class="gradient--6">
-        <div class="gradient"></div>
-        <div class="start-color"></div>
-        <div class="end-color"></div>
-    </li>
-    <li class="gradient--7">
-        <div class="gradient"></div>
-        <div class="start-color"></div>
-        <div class="end-color"></div>
-    </li>
-    <li class="gradient--8">
-        <div class="gradient"></div>
-        <div class="start-color"></div>
-        <div class="end-color"></div>
-    </li>
-    <li class="gradient--9">
-        <div class="gradient"></div>
-        <div class="start-color"></div>
-        <div class="end-color"></div>
-    </li>
-    <li class="gradient--10">
-        <div class="gradient"></div>
-        <div class="start-color"></div>
-        <div class="end-color"></div>
-    </li>
-    <li class="gradient--11">
-        <div class="gradient"></div>
-        <div class="start-color"></div>
-        <div class="end-color"></div>
-    </li>
-    <li class="gradient--12">
-        <div class="gradient"></div>
-        <div class="start-color"></div>
-        <div class="end-color"></div>
-    </li>
-    <li class="gradient--13">
-        <div class="gradient"></div>
-        <div class="start-color"></div>
-        <div class="end-color"></div>
-    </li>
-    <li class="gradient--14">
-        <div class="gradient"></div>
-        <div class="start-color"></div>
-        <div class="end-color"></div>
-    </li>
-</ul>
-<div id="view_layer"></div>
-<script src="https://cdn.bootcss.com/jquery/3.4.0/jquery.js"></script>
-<script src="js/color.js"></script>
 
-</body>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<title>Title</title>
+		<link rel="stylesheet" href="css/gradientColor.css">
+	</head>
+
+	<body>
+		<ul id="gradient">
+			<li class="gradient--0">
+				<div class="gradient"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li class="gradient--1">
+				<div class="gradient"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li class="gradient--2">
+				<div class="gradient"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li class="gradient--3">
+				<div class="gradient"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li class="gradient--4">
+				<div class="gradient"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li class="gradient--5">
+				<div class="gradient"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li class="gradient--6">
+				<div class="gradient"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li class="gradient--7">
+				<div class="gradient"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li class="gradient--8">
+				<div class="gradient"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li class="gradient--9">
+				<div class="gradient"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li class="gradient--10">
+				<div class="gradient"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li class="gradient--11">
+				<div class="gradient"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li class="gradient--12">
+				<div class="gradient"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li class="gradient--13">
+				<div class="gradient"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li class="gradient--14">
+				<div class="gradient"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#FDEB71;--gradient-start-text:&quot;#FDEB71&quot;;--gradient-end:#F8D800;--gradient-end-text:&quot;#F8D800&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#FDEB71,#F8D800)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#ABDCFF;--gradient-start-text:&quot;#ABDCFF&quot;;--gradient-end:#0396FF;--gradient-end-text:&quot;#0396FF&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#ABDCFF,#0396FF)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#FEB692;--gradient-start-text:&quot;#FEB692&quot;;--gradient-end:#EA5455;--gradient-end-text:&quot;#EA5455&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#FEB692,#EA5455)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#CE9FFC;--gradient-start-text:&quot;#CE9FFC&quot;;--gradient-end:#7367F0;--gradient-end-text:&quot;#7367F0&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#CE9FFC,#7367F0)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#90F7EC;--gradient-start-text:&quot;#90F7EC&quot;;--gradient-end:#32CCBC;--gradient-end-text:&quot;#32CCBC&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#90F7EC,#32CCBC)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#FFF6B7;--gradient-start-text:&quot;#FFF6B7&quot;;--gradient-end:#F6416C;--gradient-end-text:&quot;#F6416C&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#FFF6B7,#F6416C)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#81FBB8;--gradient-start-text:&quot;#81FBB8&quot;;--gradient-end:#28C76F;--gradient-end-text:&quot;#28C76F&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#81FBB8,#28C76F)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#E2B0FF;--gradient-start-text:&quot;#E2B0FF&quot;;--gradient-end:#9F44D3;--gradient-end-text:&quot;#9F44D3&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#E2B0FF,#9F44D3)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#F97794;--gradient-start-text:&quot;#F97794&quot;;--gradient-end:#623AA2;--gradient-end-text:&quot;#623AA2&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#F97794,#623AA2)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#FCCF31;--gradient-start-text:&quot;#FCCF31&quot;;--gradient-end:#F55555;--gradient-end-text:&quot;#F55555&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#FCCF31,#F55555)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#F761A1;--gradient-start-text:&quot;#F761A1&quot;;--gradient-end:#8C1BAB;--gradient-end-text:&quot;#8C1BAB&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#F761A1,#8C1BAB)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#43CBFF;--gradient-start-text:&quot;#43CBFF&quot;;--gradient-end:#9708CC;--gradient-end-text:&quot;#9708CC&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#43CBFF,#9708CC)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#5EFCE8;--gradient-start-text:&quot;#5EFCE8&quot;;--gradient-end:#736EFE;--gradient-end-text:&quot;#736EFE&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#5EFCE8,#736EFE)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#FAD7A1;--gradient-start-text:&quot;#FAD7A1&quot;;--gradient-end:#E96D71;--gradient-end-text:&quot;#E96D71&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#FAD7A1,#E96D71)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#FFD26F;--gradient-start-text:&quot;#FFD26F&quot;;--gradient-end:#3677FF;--gradient-end-text:&quot;#3677FF&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#FFD26F,#3677FF)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#A0FE65;--gradient-start-text:&quot;#A0FE65&quot;;--gradient-end:#FA016D;--gradient-end-text:&quot;#FA016D&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#A0FE65,#FA016D)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#FFDB01;--gradient-start-text:&quot;#FFDB01&quot;;--gradient-end:#0E197D;--gradient-end-text:&quot;#0E197D&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#FFDB01,#0E197D)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#FEC163;--gradient-start-text:&quot;#FEC163&quot;;--gradient-end:#DE4313;--gradient-end-text:&quot;#DE4313&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#FEC163,#DE4313)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#92FFC0;--gradient-start-text:&quot;#92FFC0&quot;;--gradient-end:#002661;--gradient-end-text:&quot;#002661&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#92FFC0,#002661)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#EEAD92;--gradient-start-text:&quot;#EEAD92&quot;;--gradient-end:#6018DC;--gradient-end-text:&quot;#6018DC&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#EEAD92,#6018DC)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#F6CEEC;--gradient-start-text:&quot;#F6CEEC&quot;;--gradient-end:#D939CD;--gradient-end-text:&quot;#D939CD&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#F6CEEC,#D939CD)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#52E5E7;--gradient-start-text:&quot;#52E5E7&quot;;--gradient-end:#130CB7;--gradient-end-text:&quot;#130CB7&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#52E5E7,#130CB7)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#F1CA74;--gradient-start-text:&quot;#F1CA74&quot;;--gradient-end:#A64DB6;--gradient-end-text:&quot;#A64DB6&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#F1CA74,#A64DB6)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#E8D07A;--gradient-start-text:&quot;#E8D07A&quot;;--gradient-end:#5312D6;--gradient-end-text:&quot;#5312D6&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#E8D07A,#5312D6)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#EECE13;--gradient-start-text:&quot;#EECE13&quot;;--gradient-end:#B210FF;--gradient-end-text:&quot;#B210FF&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#EECE13,#B210FF)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#79F1A4;--gradient-start-text:&quot;#79F1A4&quot;;--gradient-end:#0E5CAD;--gradient-end-text:&quot;#0E5CAD&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#79F1A4,#0E5CAD)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#FDD819;--gradient-start-text:&quot;#FDD819&quot;;--gradient-end:#E80505;--gradient-end-text:&quot;#E80505&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#FDD819,#E80505)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#FFF3B0;--gradient-start-text:&quot;#FFF3B0&quot;;--gradient-end:#CA26FF;--gradient-end-text:&quot;#CA26FF&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#FFF3B0,#CA26FF)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#FFF5C3;--gradient-start-text:&quot;#FFF5C3&quot;;--gradient-end:#9452A5;--gradient-end-text:&quot;#9452A5&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#FFF5C3,#9452A5)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#F05F57;--gradient-start-text:&quot;#F05F57&quot;;--gradient-end:#360940;--gradient-end-text:&quot;#360940&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#F05F57,#360940)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#2AFADF;--gradient-start-text:&quot;#2AFADF&quot;;--gradient-end:#4C83FF;--gradient-end-text:&quot;#4C83FF&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#2AFADF,#4C83FF)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#FFF886;--gradient-start-text:&quot;#FFF886&quot;;--gradient-end:#F072B6;--gradient-end-text:&quot;#F072B6&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#FFF886,#F072B6)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#97ABFF;--gradient-start-text:&quot;#97ABFF&quot;;--gradient-end:#123597;--gradient-end-text:&quot;#123597&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#97ABFF,#123597)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#F5CBFF;--gradient-start-text:&quot;#F5CBFF&quot;;--gradient-end:#C346C2;--gradient-end-text:&quot;#C346C2&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#F5CBFF,#C346C2)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#FFF720;--gradient-start-text:&quot;#FFF720&quot;;--gradient-end:#3CD500;--gradient-end-text:&quot;#3CD500&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#FFF720,#3CD500)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#FF6FD8;--gradient-start-text:&quot;#FF6FD8&quot;;--gradient-end:#3813C2;--gradient-end-text:&quot;#3813C2&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#FF6FD8,#3813C2)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#EE9AE5;--gradient-start-text:&quot;#EE9AE5&quot;;--gradient-end:#5961F9;--gradient-end-text:&quot;#5961F9&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#EE9AE5,#5961F9)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#FFD3A5;--gradient-start-text:&quot;#FFD3A5&quot;;--gradient-end:#FD6585;--gradient-end-text:&quot;#FD6585&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#FFD3A5,#FD6585)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#C2FFD8;--gradient-start-text:&quot;#C2FFD8&quot;;--gradient-end:#465EFB;--gradient-end-text:&quot;#465EFB&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#C2FFD8,#465EFB)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#FD6585;--gradient-start-text:&quot;#FD6585&quot;;--gradient-end:#0D25B9;--gradient-end-text:&quot;#0D25B9&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#FD6585,#0D25B9)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#FD6E6A;--gradient-start-text:&quot;#FD6E6A&quot;;--gradient-end:#FFC600;--gradient-end-text:&quot;#FFC600&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#FD6E6A,#FFC600)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#65FDF0;--gradient-start-text:&quot;#65FDF0&quot;;--gradient-end:#1D6FA3;--gradient-end-text:&quot;#1D6FA3&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#65FDF0,#1D6FA3)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#6B73FF;--gradient-start-text:&quot;#6B73FF&quot;;--gradient-end:#000DFF;--gradient-end-text:&quot;#000DFF&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#6B73FF,#000DFF)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#FF7AF5;--gradient-start-text:&quot;#FF7AF5&quot;;--gradient-end:#513162;--gradient-end-text:&quot;#513162&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#FF7AF5,#513162)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#F0FF00;--gradient-start-text:&quot;#F0FF00&quot;;--gradient-end:#58CFFB;--gradient-end-text:&quot;#58CFFB&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#F0FF00,#58CFFB)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#FFE985;--gradient-start-text:&quot;#FFE985&quot;;--gradient-end:#FA742B;--gradient-end-text:&quot;#FA742B&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#FFE985,#FA742B)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#FFA6B7;--gradient-start-text:&quot;#FFA6B7&quot;;--gradient-end:#1E2AD2;--gradient-end-text:&quot;#1E2AD2&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#FFA6B7,#1E2AD2)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#FFAA85;--gradient-start-text:&quot;#FFAA85&quot;;--gradient-end:#B3315F;--gradient-end-text:&quot;#B3315F&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#FFAA85,#B3315F)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#72EDF2;--gradient-start-text:&quot;#72EDF2&quot;;--gradient-end:#5151E5;--gradient-end-text:&quot;#5151E5&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#72EDF2,#5151E5)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#FF9D6C;--gradient-start-text:&quot;#FF9D6C&quot;;--gradient-end:#BB4E75;--gradient-end-text:&quot;#BB4E75&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#FF9D6C,#BB4E75)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#F6D242;--gradient-start-text:&quot;#F6D242&quot;;--gradient-end:#FF52E5;--gradient-end-text:&quot;#FF52E5&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#F6D242,#FF52E5)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#69FF97;--gradient-start-text:&quot;#69FF97&quot;;--gradient-end:#00E4FF;--gradient-end-text:&quot;#00E4FF&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#69FF97,#00E4FF)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#3B2667;--gradient-start-text:&quot;#3B2667&quot;;--gradient-end:#BC78EC;--gradient-end-text:&quot;#BC78EC&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#3B2667,#BC78EC)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#70F570;--gradient-start-text:&quot;#70F570&quot;;--gradient-end:#49C628;--gradient-end-text:&quot;#49C628&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#70F570,#49C628)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#3C8CE7;--gradient-start-text:&quot;#3C8CE7&quot;;--gradient-end:#00EAFF;--gradient-end-text:&quot;#00EAFF&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#3C8CE7,#00EAFF)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#FAB2FF;--gradient-start-text:&quot;#FAB2FF&quot;;--gradient-end:#1904E5;--gradient-end-text:&quot;#1904E5&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#FAB2FF,#1904E5)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#81FFEF;--gradient-start-text:&quot;#81FFEF&quot;;--gradient-end:#F067B4;--gradient-end-text:&quot;#F067B4&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#81FFEF,#F067B4)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#FFA8A8;--gradient-start-text:&quot;#FFA8A8&quot;;--gradient-end:#FCFF00;--gradient-end-text:&quot;#FCFF00&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#FFA8A8,#FCFF00)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#FFCF71;--gradient-start-text:&quot;#FFCF71&quot;;--gradient-end:#2376DD;--gradient-end-text:&quot;#2376DD&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#FFCF71,#2376DD)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#FF96F9;--gradient-start-text:&quot;#FF96F9&quot;;--gradient-end:#C32BAC;--gradient-end-text:&quot;#C32BAC&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top,#FF96F9,#C32BAC)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#ff9a9e;--gradient-start-text:&quot;#ff9a9e&quot;;--gradient-end:#fad0c4;--gradient-end-text:&quot;#fad0c4&quot;;">
+				<div class="gradient" style="background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%,#fad0c4 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#a18cd1;--gradient-start-text:&quot;#a18cd1&quot;;--gradient-end:#fbc2eb;--gradient-end-text:&quot;#fbc2eb&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#fad0c4;--gradient-start-text:&quot;#fad0c4&quot;;--gradient-end:#ffd1ff;--gradient-end-text:&quot;#ffd1ff&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #fad0c4 0%, #fad0c4 1%,#ffd1ff 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#ffecd2;--gradient-start-text:&quot;#ffecd2&quot;;--gradient-end:#fcb69f;--gradient-end-text:&quot;#fcb69f&quot;;">
+				<div class="gradient" style="background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#ff8177;--gradient-start-text:&quot;#ff8177&quot;;--gradient-end:#b12a5b;--gradient-end-text:&quot;#b12a5b&quot;;">
+				<div class="gradient" style="background: linear-gradient(to right, #ff8177 0%, #ff867a 0%,#ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#ff9a9e;--gradient-start-text:&quot;#ff9a9e&quot;;--gradient-end:#fecfef;--gradient-end-text:&quot;#fecfef&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%,#fecfef 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#f6d365;--gradient-start-text:&quot;#f6d365&quot;;--gradient-end:#fda085;--gradient-end-text:&quot;#fda085&quot;;">
+				<div class="gradient" style="background: linear-gradient(120deg, #f6d365 0%, #fda085 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#fbc2eb;--gradient-start-text:&quot;#fbc2eb&quot;;--gradient-end:#a6c1ee;--gradient-end-text:&quot;#a6c1ee&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#fdcbf1;--gradient-start-text:&quot;#fdcbf1&quot;;--gradient-end:#e6dee9;--gradient-end-text:&quot;#e6dee9&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#a1c4fd;--gradient-start-text:&quot;#a1c4fd&quot;;--gradient-end:#c2e9fb;--gradient-end-text:&quot;#c2e9fb&quot;;">
+				<div class="gradient" style="background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#d4fc79;--gradient-start-text:&quot;#d4fc79&quot;;--gradient-end:#96e6a1;--gradient-end-text:&quot;#96e6a1&quot;;">
+				<div class="gradient" style="background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#84fab0;--gradient-start-text:&quot;#84fab0&quot;;--gradient-end:#8fd3f4;--gradient-end-text:&quot;#8fd3f4&quot;;">
+				<div class="gradient" style="background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#cfd9df;--gradient-start-text:&quot;#cfd9df&quot;;--gradient-end:#e2ebf0;--gradient-end-text:&quot;#e2ebf0&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#a6c0fe;--gradient-start-text:&quot;#a6c0fe&quot;;--gradient-end:#f68084;--gradient-end-text:&quot;#f68084&quot;;">
+				<div class="gradient" style="background: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#fccb90;--gradient-start-text:&quot;#fccb90&quot;;--gradient-end:#d57eeb;--gradient-end-text:&quot;#d57eeb&quot;;">
+				<div class="gradient" style="background: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#e0c3fc;--gradient-start-text:&quot;#e0c3fc&quot;;--gradient-end:#8ec5fc;--gradient-end-text:&quot;#8ec5fc&quot;;">
+				<div class="gradient" style="background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#f093fb;--gradient-start-text:&quot;#f093fb&quot;;--gradient-end:#f5576c;--gradient-end-text:&quot;#f5576c&quot;;">
+				<div class="gradient" style="background: linear-gradient(120deg, #f093fb 0%, #f5576c 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#fdfbfb;--gradient-start-text:&quot;#fdfbfb&quot;;--gradient-end:#ebedee;--gradient-end-text:&quot;#ebedee&quot;;">
+				<div class="gradient" style="background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#4facfe;--gradient-start-text:&quot;#4facfe&quot;;--gradient-end:#00f2fe;--gradient-end-text:&quot;#00f2fe&quot;;">
+				<div class="gradient" style="background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#43e97b;--gradient-start-text:&quot;#43e97b&quot;;--gradient-end:#38f9d7;--gradient-end-text:&quot;#38f9d7&quot;;">
+				<div class="gradient" style="background: linear-gradient(to right, #43e97b 0%, #38f9d7 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#fa709a;--gradient-start-text:&quot;#fa709a&quot;;--gradient-end:#fee140;--gradient-end-text:&quot;#fee140&quot;;">
+				<div class="gradient" style="background: linear-gradient(to right, #fa709a 0%, #fee140 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#30cfd0;--gradient-start-text:&quot;#30cfd0&quot;;--gradient-end:#330867;--gradient-end-text:&quot;#330867&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #30cfd0 0%, #330867 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#a8edea;--gradient-start-text:&quot;#a8edea&quot;;--gradient-end:#fed6e3;--gradient-end-text:&quot;#fed6e3&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #a8edea 0%, #fed6e3 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#5ee7df;--gradient-start-text:&quot;#5ee7df&quot;;--gradient-end:#b490ca;--gradient-end-text:&quot;#b490ca&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #5ee7df 0%, #b490ca 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#d299c2;--gradient-start-text:&quot;#d299c2&quot;;--gradient-end:#fef9d7;--gradient-end-text:&quot;#fef9d7&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #d299c2 0%, #fef9d7 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#f5f7fa;--gradient-start-text:&quot;#f5f7fa&quot;;--gradient-end:#c3cfe2;--gradient-end-text:&quot;#c3cfe2&quot;;">
+				<div class="gradient" style="background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#16d9e3;--gradient-start-text:&quot;#16d9e3&quot;;--gradient-end:#46aef7;--gradient-end-text:&quot;#46aef7&quot;;">
+				<div class="gradient" style="background: linear-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#667eea;--gradient-start-text:&quot;#667eea&quot;;--gradient-end:#764ba2;--gradient-end-text:&quot;#764ba2&quot;;">
+				<div class="gradient" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#fdfcfb;--gradient-start-text:&quot;#fdfcfb&quot;;--gradient-end:#e2d1c3;--gradient-end-text:&quot;#e2d1c3&quot;;">
+				<div class="gradient" style="background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#89f7fe;--gradient-start-text:&quot;#89f7fe&quot;;--gradient-end:#66a6ff;--gradient-end-text:&quot;#66a6ff&quot;;">
+				<div class="gradient" style="background: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#fddb92;--gradient-start-text:&quot;#fddb92&quot;;--gradient-end:#d1fdff;--gradient-end-text:&quot;#d1fdff&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #fddb92 0%, #d1fdff 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#9890e3;--gradient-start-text:&quot;#9890e3&quot;;--gradient-end:#b1f4cf;--gradient-end-text:&quot;#b1f4cf&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#ebc0fd;--gradient-start-text:&quot;#ebc0fd&quot;;--gradient-end:#d9ded8;--gradient-end-text:&quot;#d9ded8&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #ebc0fd 0%, #d9ded8 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#96fbc4;--gradient-start-text:&quot;#96fbc4&quot;;--gradient-end:#f9f586;--gradient-end-text:&quot;#f9f586&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #96fbc4 0%, #f9f586 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#2af598;--gradient-start-text:&quot;#2af598&quot;;--gradient-end:#009efd;--gradient-end-text:&quot;#009efd&quot;;">
+				<div class="gradient" style="background: linear-gradient(180deg, #2af598 0%, #009efd 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#cd9cf2;--gradient-start-text:&quot;#cd9cf2&quot;;--gradient-end:#f6f3ff;--gradient-end-text:&quot;#f6f3ff&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#e4afcb;--gradient-start-text:&quot;#e4afcb&quot;;--gradient-end:#7edbdc;--gradient-end-text:&quot;#7edbdc&quot;;">
+				<div class="gradient" style="background: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#b8cbb8;--gradient-start-text:&quot;#b8cbb8&quot;;--gradient-end:#ee609c;--gradient-end-text:&quot;#ee609c&quot;;">
+				<div class="gradient" style="background: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#6a11cb;--gradient-start-text:&quot;#6a11cb&quot;;--gradient-end:#2575fc;--gradient-end-text:&quot;#2575fc&quot;;">
+				<div class="gradient" style="background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:to bot;--gradient-start-text:&quot;to bot&quot;;--gradient-end:to bot;--gradient-end-text:&quot;to bot&quot;;">
+				<div class="gradient" style="background: linear-gradient(to bottom, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), radial-gradient(at 50% 0%, rgba(255, 255, 255, 0.10) 0%, rgba(0, 0, 0, 0.50) 50%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#37ecba;--gradient-start-text:&quot;#37ecba&quot;;--gradient-end:#72afd3;--gradient-end-text:&quot;#72afd3&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #37ecba 0%, #72afd3 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#ebbba7;--gradient-start-text:&quot;#ebbba7&quot;;--gradient-end:#cfc7f8;--gradient-end-text:&quot;#cfc7f8&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#fff1eb;--gradient-start-text:&quot;#fff1eb&quot;;--gradient-end:#ace0f9;--gradient-end-text:&quot;#ace0f9&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#eea2a2;--gradient-start-text:&quot;#eea2a2&quot;;--gradient-end:#7ac5d8;--gradient-end-text:&quot;#7ac5d8&quot;;">
+				<div class="gradient" style="background: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:to bot;--gradient-start-text:&quot;to bot&quot;;--gradient-end:to bot;--gradient-end-text:&quot;to bot&quot;;">
+				<div class="gradient" style="background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#c471f5;--gradient-start-text:&quot;#c471f5&quot;;--gradient-end:#fa71cd;--gradient-end-text:&quot;#fa71cd&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #c471f5 0%, #fa71cd 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#48c6ef;--gradient-start-text:&quot;#48c6ef&quot;;--gradient-end:#6f86d6;--gradient-end-text:&quot;#6f86d6&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#f78ca0;--gradient-start-text:&quot;#f78ca0&quot;;--gradient-end:#fe9a8b;--gradient-end-text:&quot;#fe9a8b&quot;;">
+				<div class="gradient" style="background: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#feada6;--gradient-start-text:&quot;#feada6&quot;;--gradient-end:#f5efef;--gradient-end-text:&quot;#f5efef&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #feada6 0%, #f5efef 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#e6e9f0;--gradient-start-text:&quot;#e6e9f0&quot;;--gradient-end:#eef1f5;--gradient-end-text:&quot;#eef1f5&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#accbee;--gradient-start-text:&quot;#accbee&quot;;--gradient-end:#e7f0fd;--gradient-end-text:&quot;#e7f0fd&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #accbee 0%, #e7f0fd 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#e9defa;--gradient-start-text:&quot;#e9defa&quot;;--gradient-end:#fbfcdb;--gradient-end-text:&quot;#fbfcdb&quot;;">
+				<div class="gradient" style="background: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#c1dfc4;--gradient-start-text:&quot;#c1dfc4&quot;;--gradient-end:#deecdd;--gradient-end-text:&quot;#deecdd&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#0ba360;--gradient-start-text:&quot;#0ba360&quot;;--gradient-end:#3cba92;--gradient-end-text:&quot;#3cba92&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #0ba360 0%, #3cba92 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#00c6fb;--gradient-start-text:&quot;#00c6fb&quot;;--gradient-end:#005bea;--gradient-end-text:&quot;#005bea&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #00c6fb 0%, #005bea 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#74ebd5;--gradient-start-text:&quot;#74ebd5&quot;;--gradient-end:#9face6;--gradient-end-text:&quot;#9face6&quot;;">
+				<div class="gradient" style="background: linear-gradient(to right, #74ebd5 0%, #9face6 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#6a85b6;--gradient-start-text:&quot;#6a85b6&quot;;--gradient-end:#bac8e0;--gradient-end-text:&quot;#bac8e0&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#a3bded;--gradient-start-text:&quot;#a3bded&quot;;--gradient-end:#6991c7;--gradient-end-text:&quot;#6991c7&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #a3bded 0%, #6991c7 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#9795f0;--gradient-start-text:&quot;#9795f0&quot;;--gradient-end:#fbc8d4;--gradient-end-text:&quot;#fbc8d4&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#a7a6cb;--gradient-start-text:&quot;#a7a6cb&quot;;--gradient-end:#8989ba;--gradient-end-text:&quot;#8989ba&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#3f51b1;--gradient-start-text:&quot;#3f51b1&quot;;--gradient-end:#f7c978;--gradient-end-text:&quot;#f7c978&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#fcc5e4;--gradient-start-text:&quot;#fcc5e4&quot;;--gradient-end:#020f75;--gradient-end-text:&quot;#020f75&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#dbdcd7;--gradient-start-text:&quot;#dbdcd7&quot;;--gradient-end:#1c1a27;--gradient-end-text:&quot;#1c1a27&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#f43b47;--gradient-start-text:&quot;#f43b47&quot;;--gradient-end:#453a94;--gradient-end-text:&quot;#453a94&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #f43b47 0%, #453a94 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#4fb576;--gradient-start-text:&quot;#4fb576&quot;;--gradient-end:#432c39;--gradient-end-text:&quot;#432c39&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #4fb576 0%, #44c489 30%, #28a9ae 46%, #28a2b7 59%, #4c7788 71%, #6c4f63 86%, #432c39 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#0250c5;--gradient-start-text:&quot;#0250c5&quot;;--gradient-end:#d43f8d;--gradient-end-text:&quot;#d43f8d&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #0250c5 0%, #d43f8d 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#88d3ce;--gradient-start-text:&quot;#88d3ce&quot;;--gradient-end:#6e45e2;--gradient-end-text:&quot;#6e45e2&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #88d3ce 0%, #6e45e2 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#d9afd9;--gradient-start-text:&quot;#d9afd9&quot;;--gradient-end:#97d9e1;--gradient-end-text:&quot;#97d9e1&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#7028e4;--gradient-start-text:&quot;#7028e4&quot;;--gradient-end:#e5b2ca;--gradient-end-text:&quot;#e5b2ca&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#13547a;--gradient-start-text:&quot;#13547a&quot;;--gradient-end:#80d0c7;--gradient-end-text:&quot;#80d0c7&quot;;">
+				<div class="gradient" style="background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#BDBBBE;--gradient-start-text:&quot;#BDBBBE&quot;;--gradient-end:#9D9EA3;--gradient-end-text:&quot;#9D9EA3&quot;;">
+				<div class="gradient" style="background: linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#505285;--gradient-start-text:&quot;#505285&quot;;--gradient-end:#b5aee4;--gradient-end-text:&quot;#b5aee4&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#ff0844;--gradient-start-text:&quot;#ff0844&quot;;--gradient-end:#ffb199;--gradient-end-text:&quot;#ffb199&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #ff0844 0%, #ffb199 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:-180de;--gradient-start-text:&quot;-180de&quot;;--gradient-end:-180de;--gradient-end-text:&quot;-180de&quot;;">
+				<div class="gradient" style="background: linear-gradient(-180deg, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#93a5cf;--gradient-start-text:&quot;#93a5cf&quot;;--gradient-end:#e4efe9;--gradient-end-text:&quot;#e4efe9&quot;;">
+				<div class="gradient" style="background: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#434343;--gradient-start-text:&quot;#434343&quot;;--gradient-end:#434343;--gradient-end-text:&quot;#434343&quot;;">
+				<div class="gradient" style="background: linear-gradient(to right, #434343 0%, black 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#0c3483;--gradient-start-text:&quot;#0c3483&quot;;--gradient-end:#a2b6df;--gradient-end-text:&quot;#a2b6df&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#93a5cf;--gradient-start-text:&quot;#93a5cf&quot;;--gradient-end:#e4efe9;--gradient-end-text:&quot;#e4efe9&quot;;">
+				<div class="gradient" style="background: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#92fe9d;--gradient-start-text:&quot;#92fe9d&quot;;--gradient-end:#00c9ff;--gradient-end-text:&quot;#00c9ff&quot;;">
+				<div class="gradient" style="background: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#ff758c;--gradient-start-text:&quot;#ff758c&quot;;--gradient-end:#ff7eb3;--gradient-end-text:&quot;#ff7eb3&quot;;">
+				<div class="gradient" style="background: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#868f96;--gradient-start-text:&quot;#868f96&quot;;--gradient-end:#596164;--gradient-end-text:&quot;#596164&quot;;">
+				<div class="gradient" style="background: linear-gradient(to right, #868f96 0%, #596164 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#c79081;--gradient-start-text:&quot;#c79081&quot;;--gradient-end:#dfa579;--gradient-end-text:&quot;#dfa579&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #c79081 0%, #dfa579 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#8baaaa;--gradient-start-text:&quot;#8baaaa&quot;;--gradient-end:#ae8b9c;--gradient-end-text:&quot;#ae8b9c&quot;;">
+				<div class="gradient" style="background: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#f83600;--gradient-start-text:&quot;#f83600&quot;;--gradient-end:#f9d423;--gradient-end-text:&quot;#f9d423&quot;;">
+				<div class="gradient" style="background: linear-gradient(to right, #f83600 0%, #f9d423 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#b721ff;--gradient-start-text:&quot;#b721ff&quot;;--gradient-end:#21d4fd;--gradient-end-text:&quot;#21d4fd&quot;;">
+				<div class="gradient" style="background: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#6e45e2;--gradient-start-text:&quot;#6e45e2&quot;;--gradient-end:#88d3ce;--gradient-end-text:&quot;#88d3ce&quot;;">
+				<div class="gradient" style="background: linear-gradient(-20deg, #6e45e2 0%, #88d3ce 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#d558c8;--gradient-start-text:&quot;#d558c8&quot;;--gradient-end:#24d292;--gradient-end-text:&quot;#24d292&quot;;">
+				<div class="gradient" style="background: linear-gradient(-20deg, #d558c8 0%, #24d292 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#abecd6;--gradient-start-text:&quot;#abecd6&quot;;--gradient-end:#fbed96;--gradient-end-text:&quot;#fbed96&quot;;">
+				<div class="gradient" style="background: linear-gradient(60deg, #abecd6 0%, #fbed96 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#d5d4d0;--gradient-start-text:&quot;#d5d4d0&quot;;--gradient-end:#e9e9e7;--gradient-end-text:&quot;#e9e9e7&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#5f72bd;--gradient-start-text:&quot;#5f72bd&quot;;--gradient-end:#9b23ea;--gradient-end-text:&quot;#9b23ea&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#09203f;--gradient-start-text:&quot;#09203f&quot;;--gradient-end:#537895;--gradient-end-text:&quot;#537895&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #09203f 0%, #537895 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#ddd6f3;--gradient-start-text:&quot;#ddd6f3&quot;;--gradient-end:#faaca8;--gradient-end-text:&quot;#faaca8&quot;;">
+				<div class="gradient" style="background: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#dcb0ed;--gradient-start-text:&quot;#dcb0ed&quot;;--gradient-end:#99c99c;--gradient-end-text:&quot;#99c99c&quot;;">
+				<div class="gradient" style="background: linear-gradient(-20deg, #dcb0ed 0%, #99c99c 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#f3e7e9;--gradient-start-text:&quot;#f3e7e9&quot;;--gradient-end:#e3eeff;--gradient-end-text:&quot;#e3eeff&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#c71d6f;--gradient-start-text:&quot;#c71d6f&quot;;--gradient-end:#d09693;--gradient-end-text:&quot;#d09693&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #c71d6f 0%, #d09693 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#96deda;--gradient-start-text:&quot;#96deda&quot;;--gradient-end:#50c9c3;--gradient-end-text:&quot;#50c9c3&quot;;">
+				<div class="gradient" style="background: linear-gradient(60deg, #96deda 0%, #50c9c3 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#f77062;--gradient-start-text:&quot;#f77062&quot;;--gradient-end:#fe5196;--gradient-end-text:&quot;#fe5196&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #f77062 0%, #fe5196 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#c4c5c7;--gradient-start-text:&quot;#c4c5c7&quot;;--gradient-end:#ebebeb;--gradient-end-text:&quot;#ebebeb&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#a8caba;--gradient-start-text:&quot;#a8caba&quot;;--gradient-end:#5d4157;--gradient-end-text:&quot;#5d4157&quot;;">
+				<div class="gradient" style="background: linear-gradient(to right, #a8caba 0%, #5d4157 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#29323c;--gradient-start-text:&quot;#29323c&quot;;--gradient-end:#485563;--gradient-end-text:&quot;#485563&quot;;">
+				<div class="gradient" style="background: linear-gradient(60deg, #29323c 0%, #485563 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#16a085;--gradient-start-text:&quot;#16a085&quot;;--gradient-end:#f4d03f;--gradient-end-text:&quot;#f4d03f&quot;;">
+				<div class="gradient" style="background: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#ff5858;--gradient-start-text:&quot;#ff5858&quot;;--gradient-end:#f09819;--gradient-end-text:&quot;#f09819&quot;;">
+				<div class="gradient" style="background: linear-gradient(-60deg, #ff5858 0%, #f09819 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#2b5876;--gradient-start-text:&quot;#2b5876&quot;;--gradient-end:#4e4376;--gradient-end-text:&quot;#4e4376&quot;;">
+				<div class="gradient" style="background: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#00cdac;--gradient-start-text:&quot;#00cdac&quot;;--gradient-end:#8ddad5;--gradient-end-text:&quot;#8ddad5&quot;;">
+				<div class="gradient" style="background: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#BCC5CE;--gradient-start-text:&quot;#BCC5CE&quot;;--gradient-end:#929EAD;--gradient-end-text:&quot;#929EAD&quot;;">
+				<div class="gradient" style="background: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#4481eb;--gradient-start-text:&quot;#4481eb&quot;;--gradient-end:#04befe;--gradient-end-text:&quot;#04befe&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #4481eb 0%, #04befe 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#dad4ec;--gradient-start-text:&quot;#dad4ec&quot;;--gradient-end:#f3e7e9;--gradient-end-text:&quot;#f3e7e9&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#874da2;--gradient-start-text:&quot;#874da2&quot;;--gradient-end:#c43a30;--gradient-end-text:&quot;#c43a30&quot;;">
+				<div class="gradient" style="background: linear-gradient(45deg, #874da2 0%, #c43a30 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#4481eb;--gradient-start-text:&quot;#4481eb&quot;;--gradient-end:#04befe;--gradient-end-text:&quot;#04befe&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #4481eb 0%, #04befe 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#e8198b;--gradient-start-text:&quot;#e8198b&quot;;--gradient-end:#c7eafd;--gradient-end-text:&quot;#c7eafd&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #e8198b 0%, #c7eafd 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#EADFDF;--gradient-start-text:&quot;#EADFDF&quot;;--gradient-end:#ECE2DF;--gradient-end-text:&quot;#ECE2DF&quot;;">
+				<div class="gradient" style="background: linear-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#f794a4;--gradient-start-text:&quot;#f794a4&quot;;--gradient-end:#fdd6bd;--gradient-end-text:&quot;#fdd6bd&quot;;">
+				<div class="gradient" style="background: linear-gradient(-20deg, #f794a4 0%, #fdd6bd 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#64b3f4;--gradient-start-text:&quot;#64b3f4&quot;;--gradient-end:#c2e59c;--gradient-end-text:&quot;#c2e59c&quot;;">
+				<div class="gradient" style="background: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#3b41c5;--gradient-start-text:&quot;#3b41c5&quot;;--gradient-end:#ffc8a9;--gradient-end-text:&quot;#ffc8a9&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #3b41c5 0%, #a981bb 49%, #ffc8a9 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#0fd850;--gradient-start-text:&quot;#0fd850&quot;;--gradient-end:#f9f047;--gradient-end-text:&quot;#f9f047&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #0fd850 0%, #f9f047 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#e0e0e0;--gradient-start-text:&quot;#e0e0e0&quot;;--gradient-end:#bcbcbc;--gradient-end-text:&quot;#bcbcbc&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#ee9ca7;--gradient-start-text:&quot;#ee9ca7&quot;;--gradient-end:#ffdde1;--gradient-end-text:&quot;#ffdde1&quot;;">
+				<div class="gradient" style="background: linear-gradient(45deg, #ee9ca7 0%, #ffdde1 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#3ab5b0;--gradient-start-text:&quot;#3ab5b0&quot;;--gradient-end:#56317a;--gradient-end-text:&quot;#56317a&quot;;">
+				<div class="gradient" style="background: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:at 50%;--gradient-start-text:&quot;at 50%&quot;;--gradient-end:at 50%;--gradient-end-text:&quot;at 50%&quot;;">
+				<div class="gradient" style="background: linear-gradient(at 50% 100%, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#209cff;--gradient-start-text:&quot;#209cff&quot;;--gradient-end:#68e0cf;--gradient-end-text:&quot;#68e0cf&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #209cff 0%, #68e0cf 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#bdc2e8;--gradient-start-text:&quot;#bdc2e8&quot;;--gradient-end:#e6dee9;--gradient-end-text:&quot;#e6dee9&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#e6b980;--gradient-start-text:&quot;#e6b980&quot;;--gradient-end:#eacda3;--gradient-end-text:&quot;#eacda3&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #e6b980 0%, #eacda3 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#1e3c72;--gradient-start-text:&quot;#1e3c72&quot;;--gradient-end:#2a5298;--gradient-end-text:&quot;#2a5298&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#d5dee7;--gradient-start-text:&quot;#d5dee7&quot;;--gradient-end:#c9ffbf;--gradient-end-text:&quot;#c9ffbf&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #d5dee7 0%, #ffafbd 0%, #c9ffbf 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#9be15d;--gradient-start-text:&quot;#9be15d&quot;;--gradient-end:#00e3ae;--gradient-end-text:&quot;#00e3ae&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #9be15d 0%, #00e3ae 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#ed6ea0;--gradient-start-text:&quot;#ed6ea0&quot;;--gradient-end:#ec8c69;--gradient-end-text:&quot;#ec8c69&quot;;">
+				<div class="gradient" style="background: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#ffc3a0;--gradient-start-text:&quot;#ffc3a0&quot;;--gradient-end:#ffafbd;--gradient-end-text:&quot;#ffafbd&quot;;">
+				<div class="gradient" style="background: linear-gradient(to right, #ffc3a0 0%, #ffafbd 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#cc208e;--gradient-start-text:&quot;#cc208e&quot;;--gradient-end:#6713d2;--gradient-end-text:&quot;#6713d2&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #cc208e 0%, #6713d2 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#b3ffab;--gradient-start-text:&quot;#b3ffab&quot;;--gradient-end:#12fff7;--gradient-end-text:&quot;#12fff7&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #b3ffab 0%, #12fff7 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#D5DEE7;--gradient-start-text:&quot;#D5DEE7&quot;;--gradient-end:#E2E7ED;--gradient-end-text:&quot;#E2E7ED&quot;;">
+				<div class="gradient" style="background: linear-gradient(to bottom, #D5DEE7 0%, #E8EBF2 50%, #E2E7ED 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#65bd60;--gradient-start-text:&quot;#65bd60&quot;;--gradient-end:#fef381;--gradient-end-text:&quot;#fef381&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #65bd60 0%, #5ac1a8 25%, #3ec6ed 50%, #b7ddb7 75%, #fef381 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#243949;--gradient-start-text:&quot;#243949&quot;;--gradient-end:#517fa4;--gradient-end-text:&quot;#517fa4&quot;;">
+				<div class="gradient" style="background: linear-gradient(to right, #243949 0%, #517fa4 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#fc6076;--gradient-start-text:&quot;#fc6076&quot;;--gradient-end:#ff9a44;--gradient-end-text:&quot;#ff9a44&quot;;">
+				<div class="gradient" style="background: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#dfe9f3;--gradient-start-text:&quot;#dfe9f3&quot;;--gradient-end:#dfe9f3;--gradient-end-text:&quot;#dfe9f3&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #dfe9f3 0%, white 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#323232;--gradient-start-text:&quot;#323232&quot;;--gradient-end:#1C1C1C;--gradient-end-text:&quot;#1C1C1C&quot;;">
+				<div class="gradient" style="background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#00dbde;--gradient-start-text:&quot;#00dbde&quot;;--gradient-end:#fc00ff;--gradient-end-text:&quot;#fc00ff&quot;;">
+				<div class="gradient" style="background: linear-gradient(to right, #00dbde 0%, #fc00ff 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#f9d423;--gradient-start-text:&quot;#f9d423&quot;;--gradient-end:#ff4e50;--gradient-end-text:&quot;#ff4e50&quot;;">
+				<div class="gradient" style="background: linear-gradient(to right, #f9d423 0%, #ff4e50 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#50cc7f;--gradient-start-text:&quot;#50cc7f&quot;;--gradient-end:#f5d100;--gradient-end-text:&quot;#f5d100&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #50cc7f 0%, #f5d100 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#0acffe;--gradient-start-text:&quot;#0acffe&quot;;--gradient-end:#495aff;--gradient-end-text:&quot;#495aff&quot;;">
+				<div class="gradient" style="background: linear-gradient(to right, #0acffe 0%, #495aff 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#616161;--gradient-start-text:&quot;#616161&quot;;--gradient-end:#9bc5c3;--gradient-end-text:&quot;#9bc5c3&quot;;">
+				<div class="gradient" style="background: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:at top;--gradient-start-text:&quot;at top&quot;;--gradient-end:at top;--gradient-end-text:&quot;at top&quot;;">
+				<div class="gradient" style="background: linear-gradient(at top center, rgba(255, 255, 255, 0.03) 0%, rgba(0, 0, 0, 0.03) 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#3d3393;--gradient-start-text:&quot;#3d3393&quot;;--gradient-end:#35eb93;--gradient-end-text:&quot;#35eb93&quot;;">
+				<div class="gradient" style="background: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#df89b5;--gradient-start-text:&quot;#df89b5&quot;;--gradient-end:#bfd9fe;--gradient-end-text:&quot;#bfd9fe&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#ed6ea0;--gradient-start-text:&quot;#ed6ea0&quot;;--gradient-end:#ec8c69;--gradient-end-text:&quot;#ec8c69&quot;;">
+				<div class="gradient" style="background: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#d7d2cc;--gradient-start-text:&quot;#d7d2cc&quot;;--gradient-end:#304352;--gradient-end-text:&quot;#304352&quot;;">
+				<div class="gradient" style="background: linear-gradient(to right, #d7d2cc 0%, #304352 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#e14fad;--gradient-start-text:&quot;#e14fad&quot;;--gradient-end:#f9d423;--gradient-end-text:&quot;#f9d423&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #e14fad 0%, #f9d423 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#b224ef;--gradient-start-text:&quot;#b224ef&quot;;--gradient-end:#7579ff;--gradient-end-text:&quot;#7579ff&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #b224ef 0%, #7579ff 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#c1c161;--gradient-start-text:&quot;#c1c161&quot;;--gradient-end:#d4d4b1;--gradient-end-text:&quot;#d4d4b1&quot;;">
+				<div class="gradient" style="background: linear-gradient(to right, #c1c161 0%, #c1c161 0%, #d4d4b1 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#ec77ab;--gradient-start-text:&quot;#ec77ab&quot;;--gradient-end:#7873f5;--gradient-end-text:&quot;#7873f5&quot;;">
+				<div class="gradient" style="background: linear-gradient(to right, #ec77ab 0%, #7873f5 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#007adf;--gradient-start-text:&quot;#007adf&quot;;--gradient-end:#00ecbc;--gradient-end-text:&quot;#00ecbc&quot;;">
+				<div class="gradient" style="background: linear-gradient(to top, #007adf 0%, #00ecbc 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#20E2D7;--gradient-start-text:&quot;#20E2D7&quot;;--gradient-end:#F9FEA5;--gradient-end-text:&quot;#F9FEA5&quot;;">
+				<div class="gradient" style="background: linear-gradient(-225deg, #20E2D7 0%, #F9FEA5 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#2CD8D5;--gradient-start-text:&quot;#2CD8D5&quot;;--gradient-end:#FFBAC3;--gradient-end-text:&quot;#FFBAC3&quot;;">
+				<div class="gradient" style="background: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#2CD8D5;--gradient-start-text:&quot;#2CD8D5&quot;;--gradient-end:#8E37D7;--gradient-end-text:&quot;#8E37D7&quot;;">
+				<div class="gradient" style="background: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#DFFFCD;--gradient-start-text:&quot;#DFFFCD&quot;;--gradient-end:#39F3BB;--gradient-end-text:&quot;#39F3BB&quot;;">
+				<div class="gradient" style="background: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#5D9FFF;--gradient-start-text:&quot;#5D9FFF&quot;;--gradient-end:#6BBBFF;--gradient-end-text:&quot;#6BBBFF&quot;;">
+				<div class="gradient" style="background: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#A8BFFF;--gradient-start-text:&quot;#A8BFFF&quot;;--gradient-end:#884D80;--gradient-end-text:&quot;#884D80&quot;;">
+				<div class="gradient" style="background: linear-gradient(-225deg, #A8BFFF 0%, #884D80 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#5271C4;--gradient-start-text:&quot;#5271C4&quot;;--gradient-end:#ECA1FE;--gradient-end-text:&quot;#ECA1FE&quot;;">
+				<div class="gradient" style="background: linear-gradient(-225deg, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#FFE29F;--gradient-start-text:&quot;#FFE29F&quot;;--gradient-end:#FF719A;--gradient-end-text:&quot;#FF719A&quot;;">
+				<div class="gradient" style="background: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#22E1FF;--gradient-start-text:&quot;#22E1FF&quot;;--gradient-end:#625EB1;--gradient-end-text:&quot;#625EB1&quot;;">
+				<div class="gradient" style="background: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#B6CEE8;--gradient-start-text:&quot;#B6CEE8&quot;;--gradient-end:#F578DC;--gradient-end-text:&quot;#F578DC&quot;;">
+				<div class="gradient" style="background: linear-gradient(-225deg, #B6CEE8 0%, #F578DC 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#FFFEFF;--gradient-start-text:&quot;#FFFEFF&quot;;--gradient-end:#D7FFFE;--gradient-end-text:&quot;#D7FFFE&quot;;">
+				<div class="gradient" style="background: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#E3FDF5;--gradient-start-text:&quot;#E3FDF5&quot;;--gradient-end:#FFE6FA;--gradient-end-text:&quot;#FFE6FA&quot;;">
+				<div class="gradient" style="background: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#7DE2FC;--gradient-start-text:&quot;#7DE2FC&quot;;--gradient-end:#B9B6E5;--gradient-end-text:&quot;#B9B6E5&quot;;">
+				<div class="gradient" style="background: linear-gradient(-225deg, #7DE2FC 0%, #B9B6E5 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#CBBACC;--gradient-start-text:&quot;#CBBACC&quot;;--gradient-end:#2580B3;--gradient-end-text:&quot;#2580B3&quot;;">
+				<div class="gradient" style="background: linear-gradient(-225deg, #CBBACC 0%, #2580B3 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#B7F8DB;--gradient-start-text:&quot;#B7F8DB&quot;;--gradient-end:#50A7C2;--gradient-end-text:&quot;#50A7C2&quot;;">
+				<div class="gradient" style="background: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#7085B6;--gradient-start-text:&quot;#7085B6&quot;;--gradient-end:#DEF3F8;--gradient-end-text:&quot;#DEF3F8&quot;;">
+				<div class="gradient" style="background: linear-gradient(-225deg, #7085B6 0%, #87A7D9 50%, #DEF3F8 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#77FFD2;--gradient-start-text:&quot;#77FFD2&quot;;--gradient-end:#1EECFF;--gradient-end-text:&quot;#1EECFF&quot;;">
+				<div class="gradient" style="background: linear-gradient(-225deg, #77FFD2 0%, #6297DB 48%, #1EECFF 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#AC32E4;--gradient-start-text:&quot;#AC32E4&quot;;--gradient-end:#4801FF;--gradient-end-text:&quot;#4801FF&quot;;">
+				<div class="gradient" style="background: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#D4FFEC;--gradient-start-text:&quot;#D4FFEC&quot;;--gradient-end:#4596FB;--gradient-end-text:&quot;#4596FB&quot;;">
+				<div class="gradient" style="background: linear-gradient(-225deg, #D4FFEC 0%, #57F2CC 48%, #4596FB 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#9EFBD3;--gradient-start-text:&quot;#9EFBD3&quot;;--gradient-end:#45D4FB;--gradient-end-text:&quot;#45D4FB&quot;;">
+				<div class="gradient" style="background: linear-gradient(-225deg, #9EFBD3 0%, #57E9F2 48%, #45D4FB 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#473B7B;--gradient-start-text:&quot;#473B7B&quot;;--gradient-end:#30D2BE;--gradient-end-text:&quot;#30D2BE&quot;;">
+				<div class="gradient" style="background: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#65379B;--gradient-start-text:&quot;#65379B&quot;;--gradient-end:#6457C6;--gradient-end-text:&quot;#6457C6&quot;;">
+				<div class="gradient" style="background: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#A445B2;--gradient-start-text:&quot;#A445B2&quot;;--gradient-end:#FF0066;--gradient-end-text:&quot;#FF0066&quot;;">
+				<div class="gradient" style="background: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#7742B2;--gradient-start-text:&quot;#7742B2&quot;;--gradient-end:#FD8BD9;--gradient-end-text:&quot;#FD8BD9&quot;;">
+				<div class="gradient" style="background: linear-gradient(-225deg, #7742B2 0%, #F180FF 52%, #FD8BD9 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#FF3CAC;--gradient-start-text:&quot;#FF3CAC&quot;;--gradient-end:#2B86C5;--gradient-end-text:&quot;#2B86C5&quot;;">
+				<div class="gradient" style="background: linear-gradient(-225deg, #FF3CAC 0%, #562B7C 52%, #2B86C5 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#FF057C;--gradient-start-text:&quot;#FF057C&quot;;--gradient-end:#321575;--gradient-end-text:&quot;#321575&quot;;">
+				<div class="gradient" style="background: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#FF057C;--gradient-start-text:&quot;#FF057C&quot;;--gradient-end:#4CC3FF;--gradient-end-text:&quot;#4CC3FF&quot;;">
+				<div class="gradient" style="background: linear-gradient(-225deg, #FF057C 0%, #7C64D5 48%, #4CC3FF 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#69EACB;--gradient-start-text:&quot;#69EACB&quot;;--gradient-end:#6654F1;--gradient-end-text:&quot;#6654F1&quot;;">
+				<div class="gradient" style="background: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#231557;--gradient-start-text:&quot;#231557&quot;;--gradient-end:#FFF800;--gradient-end-text:&quot;#FFF800&quot;;">
+				<div class="gradient" style="background: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+			<li style="--gradient-start:#3D4E81;--gradient-start-text:&quot;#3D4E81&quot;;--gradient-end:#6E7FF3;--gradient-end-text:&quot;#6E7FF3&quot;;">
+				<div class="gradient" style="background: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%)"></div>
+				<div class="start-color"></div>
+				<div class="end-color"></div>
+			</li>
+		</ul>
+		<div id="view_layer"></div>
+    	<script src="https://cdn.bootcss.com/jquery/3.4.0/jquery.js"></script>
+		<script src="js/color.js"></script>
+
+	</body>
+
 </html>
