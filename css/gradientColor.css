@@ -127,6 +127,7 @@ li {
     background: linear-gradient(33deg, var(--gradient-start), var(--gradient-end));
     border-radius: 20px;
     box-shadow: 0 5px 10px #0002;
+    cursor: pointer;
 }
 
 .start-color, .end-color {
@@ -156,7 +157,8 @@ li {
 
 .start-color:after { content: var(--gradient-end-text); }
 #view_layer{
-    display: none;position:fixed;top:0;right:0;bottom:0;left:0;z-index:99994;overflow:auto;padding-top:40px
+    display: none;position:fixed;top:0;right:0;bottom:0;left:0;z-index:99994;overflow:auto;padding-top:40px;
+    cursor: pointer;
 }
 @media screen and (min-width: 1750px) { :root { --columns: 8; } }
 @media screen and (max-width: 1750px) { :root { --columns: 7; } }

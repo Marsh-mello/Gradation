@@ -29,11 +29,13 @@ $(function () {
         var viewColor=$(this).css('background');
         console.log(viewColor)
         $('body').css('overflow','hidden');
-        viewLayer.css('display','block');
+        // viewLayer.css('display','block');
+        viewLayer.fadeToggle(500);
         viewLayer.css('background',viewColor)
     })
     viewLayer.click(function () {
         $('body').css('overflow','auto');
-        viewLayer.css('display','none');
+        // viewLayer.css('display','none');
+        viewLayer.fadeToggle(500);
     })
 })
