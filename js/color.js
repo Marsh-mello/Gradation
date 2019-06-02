@@ -3,12 +3,7 @@ $(function () {
     var viewLayer=$('#view_layer');
     gradientOn.click(function () {
         var viewColor=$(this).css('background');
-        var styColor=this.style.background;
-        if(viewColor>0){
-        	viewLayer.css('background',viewColor);
-        }else{
-        	viewLayer.css('background',styColor);
-        }
+        viewLayer.css('background',viewColor);
         $('body').css('overflow','hidden');
         viewLayer.fadeToggle(500);
     })
